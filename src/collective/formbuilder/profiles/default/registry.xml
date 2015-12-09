@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<registry>
+  <records prefix="plone.bundles/formbuilder"
+           interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="resources" purge="false">
+      <element>formbuilder</element>
+    </value>
+    <value key="jscompilation">++plone++mosaic/plone-mosaic.js</value>
+    <value key="csscompilation">++plone++mosaic/plone-mosaic.css</value>
+    <value key="last_compilation">2014-08-14 00:00:00</value>
+    <value key="compile">True</value>
+    <value key="enabled">True</value>
+    <!-- value key="depends">plone-logged-in</value -->
+  </records>
+</registry>
