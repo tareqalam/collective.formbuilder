@@ -12,13 +12,4 @@ class ICollectiveFormbuilderLayer(IDefaultBrowserLayer):
 
 
 class IForm(Interface):
-
-    title = schema.TextLine(
-        title=_(u"Title"),
-        required=True,
-    )
-
-    description = schema.Text(
-        title=_(u"Description"),
-        required=False,
-    )
+    """ Marker interface for formbuilder form """
