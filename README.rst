@@ -26,6 +26,10 @@ Documentation
 
 Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
 
+Build JavaScript ::
+
+ $ ../../bin/r.js -o build.js
+
 
 Translations
 ------------
