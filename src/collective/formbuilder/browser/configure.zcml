@@ -24,6 +24,14 @@
     permission="cmf.ModifyPortalContent"
     />
 
+<browser:page
+    for="..interfaces.IForm"
+    name="formedit"
+    class=".forms.FormEditForm"
+    permission="cmf.ModifyPortalContent"
+    template="templates/formedit.pt"
+    />
+
 <adapter
     for="Products.CMFCore.interfaces.IFolderish
          zope.publisher.interfaces.browser.IDefaultBrowserLayer

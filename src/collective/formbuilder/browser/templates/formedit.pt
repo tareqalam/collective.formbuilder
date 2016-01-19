@@ -1,0 +1,55 @@
+<!doctype html>
+<html metal:use-macro="context/main_template/macros/master">
+<metal:css fill-slot="head-slot">
+    <link rel="stylesheet" href="++resource++collective.formbuilder/css/custom.css">
+    <link rel="stylesheet" href="++resource++collective.formbuilder/css/bootstrap.min.css">
+</metal:css>
+<body>
+<metal:main fill-slot="content-core">
+
+    <div class="container">
+
+      <div class="row clearfix">
+        <!-- Building Form. -->
+        <div class="col-md-5">
+          <div class="clearfix">
+            <h2>Build Your Form</h2>
+            <p class="help-block">
+          Click on the elment to edit the element properties. Click hold and Drag to reorder the elements. 
+          </p>
+            <hr>
+            <div id="build">
+              <form id="target" class="form-horizontal" role="form"></form>
+            </div>
+          </div>
+        </div>
+        <!-- / Building Form. -->
+
+        <!-- Components -->
+        <div class="col-md-7">
+          <h2>Drag & Drop components</h2>
+          <p class="help-block">
+          Drag components from the tabs to the form area on the left. Use the preview tab to see how the form looks. CLick the Render Tab to grab your code!
+          </p>
+          <hr>
+          <div class="tabbable">
+            <ul class="nav nav-tabs" id="formtabs">
+              <!-- Tab nav -->
+            </ul>
+            <form id="components" class="form-horizontal" role="form">
+              <fieldset>
+                <div class="tab-content">
+                  <!-- Tabs of snippets go here -->
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <!-- / Components -->
+      </div>
+
+    <!-- script data-main="assets/js/main.js" src="bower_components/requirejs/require.js" ></script-->
+    <script data-main="main.js" src="++resource++collective.formbuilder/js/main.js" ></script>
+</metal:main>
+</body>
+</html>

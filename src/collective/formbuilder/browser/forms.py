@@ -1,8 +1,15 @@
 from plone.dexterity.browser import edit
 from plone.dexterity.browser import add
 from Products.CMFPlone.resources import add_resource_on_request
+from Products.Five import BrowserView
 
 resource = 'formbuilder'
+
+class FormEditForm(BrowserView):
+
+    def __call__(self):
+        #add_resource_on_request(self.request, resource)
+        return super(FormEditForm, self).__call__()
 
 class EditForm(edit.DefaultEditForm):
 
