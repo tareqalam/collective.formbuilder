@@ -19,32 +19,9 @@
 
 <browser:page
     for="..interfaces.IForm"
-    name="edit"
-    class=".forms.EditForm"
-    permission="cmf.ModifyPortalContent"
-    />
-
-<browser:page
-    for="..interfaces.IForm"
     name="formedit"
-    class=".forms.FormEditForm"
     permission="cmf.ModifyPortalContent"
     template="templates/formedit.pt"
     />
-
-<adapter
-    for="Products.CMFCore.interfaces.IFolderish
-         zope.publisher.interfaces.browser.IDefaultBrowserLayer
-         plone.dexterity.interfaces.IDexterityFTI"
-    provides="zope.publisher.interfaces.browser.IBrowserPage"
-    factory=".forms.AddView"
-    name="collective.formbuilder"
-    />
-<class class=".forms.AddView">
-    <require
-        permission="cmf.AddPortalContent"
-        interface="zope.publisher.interfaces.browser.IBrowserPage"
-        />
-</class>
 
 </configure>

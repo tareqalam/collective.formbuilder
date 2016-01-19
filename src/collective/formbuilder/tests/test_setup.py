@@ -45,6 +45,6 @@ class TestUninstall(unittest.TestCase):
 
     def test_browserlayer_removed(self):
         """Test that ICollectiveFormbuilderLayer is removed."""
-        from collective.formbuilder.interfaces import ICollectiveFormbuilderLayer
+        from collective.formbuilder.interfaces import ICollectiveFormbuilderLayer  # noqa
         from plone.browserlayer import utils
-        self.assertNotIn(ICollectiveFormbuilderLayer, utils.registered_layers())
+        self.assertNotIn(ICollectiveFormbuilderLayer, utils.registered_layers())  # noqa
